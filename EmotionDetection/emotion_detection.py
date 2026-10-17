@@ -9,11 +9,11 @@ EMOTION_URL = (
 EMOTIONS = ("anger", "disgust", "fear", "joy", "sadness")
 
 
-def emotion_detector(text_to_analyze):
+def emotion_detector(text_to_analyse):
     """Return Watson scores and the highest-scoring emotion, or None for HTTP 400."""
     response = requests.post(
         EMOTION_URL,
-        json={"raw_document": {"text": text_to_analyze}},
+        json={"raw_document": {"text": text_to_analyse}},
         headers={"grpc-metadata-mm-model-id":
                  "emotion_aggregated-workflow_lang_en_stock"},
         timeout=30,
