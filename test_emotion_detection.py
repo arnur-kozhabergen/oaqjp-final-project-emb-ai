@@ -1,6 +1,6 @@
 """Validate the five required emotions against the live Watson NLP service."""
 import unittest
-from EmotionDetection import emotion_detector
+from EmotionDetection.emotion_detection import emotion_detector
 
 
 class TestEmotionDetector(unittest.TestCase):
